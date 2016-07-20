@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="stylesheets/bootstrap.min.css">
+		<link type="text/css" rel="stylesheet" href="stylesheets/bootstrap-responsive.min.css">
+		<link type="text/css" rel="stylesheet" href="stylesheets/style.css">
+		
+		<script src="javascripts/d3/d3.js"></script>
+		<script src="javascripts/d3/d3.geom.js"></script>
+		<script src="javascripts/d3/d3.layout.js"></script>
+		<script src="javascripts/CodeFlower.js"></script>
+		<script src="javascripts/constants.js"></script>
+	</head>
+<body>
+	<div id="flower">
+	</div>
+	<script>
+			var flower = new CodeFlower("#flower", 300, 300);
+			var client = new XMLHttpRequest();
+			var obj_array = JSON.parse(json_data);
+			flower.update(obj_array)	
+	</script>
+</body>
+</html>
